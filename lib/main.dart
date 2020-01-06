@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'package:hub/Splash.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,7 +22,8 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      //home: MyHomePage(title: 'Flutter Demo Home Page'),
+       home: Splash(),
     );
   }
 }
@@ -38,7 +41,8 @@ class MyHomePage extends StatefulWidget {
   // always marked "final".
 
   final String title;
-
+   
+  
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -57,6 +61,11 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+@override
+  void initState() {
+    super.initState();
+    SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
+  }
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
