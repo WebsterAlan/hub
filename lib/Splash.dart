@@ -15,13 +15,13 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays([]);
-    Future.delayed(Duration(seconds: 120)).then((_){
+    Future.delayed(Duration(seconds: 4)).then((_){
         Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => MyHomePage()));
     });
   }
   
   @override
   Widget build(BuildContext context) {
-      return Container(color: Colors.yellow, child: Center(child: Container(width: 150,height: 150,child: Image.asset("images/guia_gay_.png"))));
+      return Container(color: Colors.red, child: Center(child: Container(width: 150,height: 150,child: Image.asset("images/guia_gay_logo.png"))));
   }
 }
