@@ -24,7 +24,7 @@ RouteFactory routes() {
         screen = RegisterPage();
         break;
         default:
-        screen = Splash();
+        screen = LoginPage();
         break;
     }
     return MaterialPageRoute(builder: (BuildContext context) => screen);
