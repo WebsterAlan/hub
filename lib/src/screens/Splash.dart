@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:hub/main.dart';
+import 'package:hub/app.dart';
 
 class Splash extends  StatefulWidget {
   
