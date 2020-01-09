@@ -2,12 +2,8 @@ import 'package:flutter/widgets.dart';
 
 class RegisterPage extends StatefulWidget{
  
- 
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    return null;
-  }
+ @override
+  RegisterPageState createState() => RegisterPageState();
 }
 
 class RegisterPageState extends State<RegisterPage>{

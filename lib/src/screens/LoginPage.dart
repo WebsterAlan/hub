@@ -4,10 +4,8 @@ import 'package:flutter/widgets.dart';
 class LoginPage extends StatefulWidget{
   
   
-  @override
-  State<StatefulWidget> createState() {
-    return null;
-  }
+   @override
+  LoginPageState createState() => LoginPageState();
 }
 
 class LoginPageState extends State<LoginPage>{

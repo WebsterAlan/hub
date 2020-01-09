@@ -2,11 +2,8 @@ import 'package:flutter/widgets.dart';
 
 class LocatePage extends StatefulWidget{
   
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    return null;
-  }
+   @override
+  LocatePageState createState() => LocatePageState();
 }
 
 class LocatePageState extends State<LocatePage>{

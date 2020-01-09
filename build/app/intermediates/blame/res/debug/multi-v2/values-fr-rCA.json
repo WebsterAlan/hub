@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/danger/Documentos/project/hub/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml",
+            "outputFile": "/home/danger/Documentos/project/git_hub/hub/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml",
             "map": [
                 {
                     "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/448ff76c5d5c4ed8f65bc1b2f581a60a/res/values-fr-rCA/values-fr-rCA.xml",

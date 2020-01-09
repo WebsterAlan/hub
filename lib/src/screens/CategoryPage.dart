@@ -2,11 +2,9 @@ import 'package:flutter/widgets.dart';
 
 class CategoryPage extends StatefulWidget{
   
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    return null;
-  }
+  
+ @override
+  CategoryPageState createState() => CategoryPageState();
 }
 
 class CategoryPageState extends State<CategoryPage>{
