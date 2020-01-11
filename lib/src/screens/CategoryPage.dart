@@ -26,7 +26,7 @@ class CategoryPageState extends State<CategoryPage>{
           children: events.map((title){
             return GestureDetector(
               onTap: (){
-
+                     
               } ,
               child: Card(
                 margin: const EdgeInsets.all(20.0),
