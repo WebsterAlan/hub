@@ -14,7 +14,8 @@ dependencies:
   google_maps_flutter: ^0.5.21+15
   location: ^2.3.5
   http: any
-  
+  sqflite: any
+  path_provider: any
 
 dev_dependencies:
   flutter_test:
