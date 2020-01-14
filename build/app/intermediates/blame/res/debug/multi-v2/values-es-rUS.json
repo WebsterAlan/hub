@@ -4,24 +4,7 @@
             "outputFile": "/home/danger/Documentos/project/git_hub/hub/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml",
             "map": [
                 {
-                    "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/bb96925473c8e76abab722ab3d2a62f2/res/values-es-rUS/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "251",
-                        "endColumns": "204",
-                        "endOffsets": "455"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1298",
-                        "endColumns": "204",
-                        "endOffsets": "1498"
-                    }
-                },
-                {
-                    "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/448ff76c5d5c4ed8f65bc1b2f581a60a/res/values-es-rUS/values-es-rUS.xml",
+                    "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/4f3a86c3a9b3c6115a538470a8e5c232/res/values-es-rUS/values-es-rUS.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/af559cd001177933c79f99e8c1f14c24/res/values-es-rUS/values.xml",
+                    "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/3ab7de4dbca1df3a87e7f64883a57236/res/values-es-rUS/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -52,6 +35,23 @@
                         "startOffsets": "105,215,413,547,657,877,1010,1163,1503,1733,1844,2045,2180,2416,2624,2724,2816",
                         "endColumns": "109,197,133,109,219,132,152,134,229,110,200,134,235,207,99,91,106",
                         "endOffsets": "210,408,542,652,872,1005,1158,1293,1728,1839,2040,2175,2411,2619,2719,2811,2918"
+                    }
+                },
+                {
+                    "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/ceb6cfc34aa34e386781d5abf63ccd81/res/values-es-rUS/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "204",
+                        "endOffsets": "455"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1298",
+                        "endColumns": "204",
+                        "endOffsets": "1498"
                     }
                 }
             ]

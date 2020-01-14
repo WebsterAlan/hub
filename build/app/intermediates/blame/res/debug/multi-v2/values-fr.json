@@ -4,7 +4,7 @@
             "outputFile": "/home/danger/Documentos/project/git_hub/hub/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-fr/values-fr.xml",
             "map": [
                 {
-                    "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/af559cd001177933c79f99e8c1f14c24/res/values-fr/values.xml",
+                    "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/3ab7de4dbca1df3a87e7f64883a57236/res/values-fr/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/448ff76c5d5c4ed8f65bc1b2f581a60a/res/values-fr/values-fr.xml",
+                    "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/4f3a86c3a9b3c6115a538470a8e5c232/res/values-fr/values-fr.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/bb96925473c8e76abab722ab3d2a62f2/res/values-fr/values.xml",
+                    "source": "/home/danger/.gradle/caches/transforms-2/files-2.1/ceb6cfc34aa34e386781d5abf63ccd81/res/values-fr/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
