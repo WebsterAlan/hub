@@ -1,9 +1,27 @@
+import 'package:hub/src/ctrl/LoginCtrl.dart';
+import 'package:hub/src/interface/view.dart';
 import 'package:hub/src/screens/ResetPasswordPage.dart';
 import 'HomePage.dart';
 import 'package:hub/src/screens/SignupPage.dart';
 import 'package:flutter/material.dart';
+import 'package:hub/src/mdl/LoginMdl.dart';
 
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
+
+final LoginCtrl loginCtrl;
+
+//Construtor
+LoginPage({this.loginCtrl});
+
+//Instância de _LoginPageState
+  @override
+  _LoginPageState createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> implements AppView{
+ 
+  LoginMdl loginMdl;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,6 +39,8 @@ class LoginPage extends StatelessWidget {
               height: 20,
             ),
             TextFormField(
+              //Esse valor está vindo do LoginMdl
+              controller: loginMdl.ctrlTxtEdt1,
               // autofocus: true,
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
@@ -38,6 +58,8 @@ class LoginPage extends StatelessWidget {
             ),
             TextFormField(
               // autofocus: true,
+              //Esse valor está vindo do LoginMdl
+              controller: loginMdl.ctrlTxtEdt2,
               keyboardType: TextInputType.text,
               obscureText: true,
               decoration: InputDecoration(
@@ -50,6 +72,7 @@ class LoginPage extends StatelessWidget {
               ),
               style: TextStyle(fontSize: 20),
             ),
+             
             Container(
               height: 40,
               alignment: Alignment.centerRight,
@@ -157,7 +180,7 @@ class LoginPage extends StatelessWidget {
                       )
                     ],
                   ),
-                  onPressed: () {},
+                  onPressed: ()=>this.widget.loginCtrl.buttonClick(),
                 ),
               ),
             ),
@@ -185,5 +208,19 @@ class LoginPage extends StatelessWidget {
         ),
       ),
     );
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    this.widget.loginCtrl.view = this;
+  }
+
+  @override
+  void refreshData(LoginMdl loginMdl) {
+     setState(() {
+        this.loginMdl = loginMdl;
+      });
   }
 }

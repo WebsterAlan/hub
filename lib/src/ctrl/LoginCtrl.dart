@@ -1,22 +1,44 @@
-import 'package:flutter/material.dart';
+import 'package:hub/src/interface/view.dart';
 import 'package:hub/src/mdl/LoginMdl.dart';
+import 'package:hub/src/screens/LoginPage.dart';
 
-class LoginCtrl extends StatefulWidget{
-  
-  @override
-  LoginCtrlState createState() => LoginCtrlState();
-    
-  }
-  
-  class LoginCtrlState extends State<LoginCtrl>{
-   
-  LoginMdl loginMdl;
-
-  @override
-  Widget build(BuildContext context) {
-    // TODO: implement build
-    return null;
-  }
+//Atua como se fosse uma interface
+class LoginCtrl  {
+  set view(AppView value){}
+  void buttonClick(){}
 }
 
+//Implementação
+class AppLoginCtrl implements LoginCtrl{
+ 
+  //Model
+  LoginMdl loginMdl;
+
+  //LoginPage
+  AppView _view;
+
+  AppLoginCtrl(){
+    this.loginMdl = LoginMdl();
+  }
+
+  @override
+  void set view(AppView value) {
+    _view = value;
+    this._view.refreshData(this.loginMdl);
+  }
+
+  @override
+  void buttonClick() {
+    int v1 = int.parse(this.loginMdl.ctrlTxtEdt1.text);
+    int v2 = int.parse(this.loginMdl.ctrlTxtEdt2.text);
+
+    if(v1 == v2){
+      this.loginMdl.result = true;
+    }
+    this._view.refreshData(this.loginMdl);
+  }
+
+ 
+ 
+}
 
