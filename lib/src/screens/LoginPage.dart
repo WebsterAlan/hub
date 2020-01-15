@@ -214,6 +214,7 @@ class _LoginPageState extends State<LoginPage> implements AppView{
   void initState() {
     // TODO: implement initState
     super.initState();
+    // set view 
     this.widget.loginCtrl.view = this;
   }
 

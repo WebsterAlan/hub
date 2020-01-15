@@ -23,7 +23,9 @@ class AppLoginCtrl implements LoginCtrl{
 
   @override
   void set view(AppView value) {
+    //Injeção por interface
     _view = value;
+    //Já obtem o loginMdl instanciado
     this._view.refreshData(this.loginMdl);
   }
 
