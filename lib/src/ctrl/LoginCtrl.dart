@@ -1,11 +1,12 @@
+import 'package:flutter/material.dart';
 import 'package:hub/src/interface/view.dart';
 import 'package:hub/src/mdl/LoginMdl.dart';
-import 'package:hub/src/screens/LoginPage.dart';
+import 'package:hub/src/screens/CategoryPage.dart';
 
 //Atua como se fosse uma interface
 class LoginCtrl  {
   set view(AppView value){}
-  void buttonClick(){}
+  void buttonClick(BuildContext context){}
 }
 
 //Implementação
@@ -30,14 +31,13 @@ class AppLoginCtrl implements LoginCtrl{
   }
 
   @override
-  void buttonClick() {
-    int v1 = int.parse(this.loginMdl.ctrlTxtEdt1.text);
-    int v2 = int.parse(this.loginMdl.ctrlTxtEdt2.text);
-
-    if(v1 == v2){
-      this.loginMdl.result = true;
-    }
+  void buttonClick(BuildContext context) {
+    String email = this.loginMdl.ctrlTxtEdt1.text;
+    String password = this.loginMdl.ctrlTxtEdt2.text;
+    
+    this.loginMdl.efetuarLogin(email,password);
     this._view.refreshData(this.loginMdl);
+    Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryPage()));
   }
 
  

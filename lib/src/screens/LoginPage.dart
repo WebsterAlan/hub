@@ -180,7 +180,7 @@ class _LoginPageState extends State<LoginPage> implements AppView{
                       )
                     ],
                   ),
-                  onPressed: ()=>this.widget.loginCtrl.buttonClick(),
+                  onPressed: ()=>this.widget.loginCtrl.buttonClick(context),
                 ),
               ),
             ),
