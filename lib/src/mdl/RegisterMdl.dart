@@ -13,7 +13,7 @@ class RegisterMdl{
 
    final db = await provider.database;
     await db.rawInsert(
-      "INSERT Into User (name,email,password) VALUES ($name,$email,$password)");
+      "INSERT Into User (name,email,password) VALUES ('$name','$email','$password')");
  }
 
 
