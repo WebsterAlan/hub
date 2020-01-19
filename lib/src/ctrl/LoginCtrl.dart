@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:hub/src/interface/view.dart';
+import 'package:hub/src/interface/LoginPageView.dart';
 import 'package:hub/src/mdl/LoginMdl.dart';
-import 'package:hub/src/screens/CategoryPage.dart';
+
 
 //Atua como se fosse uma interface
 class LoginCtrl  {
-  set view(AppView value){}
+  set view(LoginPageView value){}
   void buttonClick(BuildContext context){}
 }
 
@@ -16,28 +16,33 @@ class AppLoginCtrl implements LoginCtrl{
   LoginMdl loginMdl;
 
   //LoginPage
-  AppView _view;
+  LoginPageView _view;
 
   AppLoginCtrl(){
     this.loginMdl = LoginMdl();
   }
 
   @override
-  void set view(AppView value) {
+  set view(LoginPageView value) {
     //Injeção por interface
     _view = value;
     //Já obtem o loginMdl instanciado
-    this._view.refreshData(this.loginMdl);
+    this._view.refreshLoginMdl(this.loginMdl);
   }
 
   @override
-  void buttonClick(BuildContext context) {
-    String email = this.loginMdl.ctrlTxtEdt1.text;
-    String password = this.loginMdl.ctrlTxtEdt2.text;
+  Future<void> buttonClick(BuildContext context) async {
+    /*String email = this.loginMdl.ctrlTxtEdtEmailLogin.text;
+    String password = this.loginMdl.ctrlTxtEdtPasswordLogin.text;
     
-    this.loginMdl.efetuarLogin(email,password);
-    this._view.refreshData(this.loginMdl);
-    Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryPage()));
+    bool result = await  loginMdl.efetuarLogin(email,password);
+      this._view.refreshLoginMdl(this.loginMdl);
+      
+    if(result == true) {
+      //Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryPage()));
+      Navigator.pushNamed(context, "/gallery");
+    }*/
+    Navigator.pushNamed(context, "/gallery");
   }
 
  

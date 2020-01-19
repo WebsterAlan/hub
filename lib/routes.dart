@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:hub/src/ctrl/LoginCtrl.dart';
 import 'package:hub/src/screens/LoginPage.dart';
 import 'package:hub/src/screens/RegisterPage.dart';
 import 'package:hub/src/screens/Splash.dart';
@@ -20,7 +21,7 @@ RouteFactory routes() {
         screen = Splash();
         break;
         case LoginPageRoute:
-        screen = LoginPage();
+        screen = LoginPage(loginCtrl: AppLoginCtrl(),);
         break;
         case RegisterPageRoute:
         screen = RegisterPage();
@@ -29,9 +30,9 @@ RouteFactory routes() {
         screen = GaleryPage();
         break;
         default:
-        screen = LoginPage();
+        screen = LoginPage(loginCtrl: AppLoginCtrl(),);
         break;
     }
     return MaterialPageRoute(builder: (BuildContext context) => screen);
   };
-}
+} 

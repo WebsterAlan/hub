@@ -1,5 +1,5 @@
 import 'package:hub/src/ctrl/LoginCtrl.dart';
-import 'package:hub/src/interface/view.dart';
+import 'package:hub/src/interface/LoginPageView.dart';
 import 'package:hub/src/screens/ResetPasswordPage.dart';
 import 'HomePage.dart';
 import 'package:hub/src/screens/SignupPage.dart';
@@ -18,7 +18,7 @@ LoginPage({this.loginCtrl});
   _LoginPageState createState() => _LoginPageState();
 }
 
-class _LoginPageState extends State<LoginPage> implements AppView{
+class _LoginPageState extends State<LoginPage> implements LoginPageView{
  
   LoginMdl loginMdl;
 
@@ -40,7 +40,7 @@ class _LoginPageState extends State<LoginPage> implements AppView{
             ),
             TextFormField(
               //Esse valor está vindo do LoginMdl
-              controller: loginMdl.ctrlTxtEdt1,
+              controller: loginMdl.ctrlTxtEdtEmailLogin,
               // autofocus: true,
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
@@ -59,7 +59,7 @@ class _LoginPageState extends State<LoginPage> implements AppView{
             TextFormField(
               // autofocus: true,
               //Esse valor está vindo do LoginMdl
-              controller: loginMdl.ctrlTxtEdt2,
+              controller: loginMdl.ctrlTxtEdtPasswordLogin,
               keyboardType: TextInputType.text,
               obscureText: true,
               decoration: InputDecoration(
@@ -219,9 +219,10 @@ class _LoginPageState extends State<LoginPage> implements AppView{
   }
 
   @override
-  void refreshData(LoginMdl loginMdl) {
+  void refreshLoginMdl(LoginMdl loginMdl) {
      setState(() {
         this.loginMdl = loginMdl;
       });
   }
+
 }

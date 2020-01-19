@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:hub/src/ctrl/LoginCtrl.dart';
+import 'package:hub/src/ctrl/RegisterCtrl.dart';
+import 'package:hub/src/screens/RegisterPage.dart';
 import 'LoginPage.dart';
 
 
@@ -18,7 +20,7 @@ class _SplashState extends State<Splash> {
     super.initState();
     SystemChrome.setEnabledSystemUIOverlays([]);
     Future.delayed(Duration(seconds: 4)).then((_){
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => LoginPage(loginCtrl: new AppLoginCtrl(),)));
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => RegisterPage(registerCtrl: new AppRegisterCtrl(),)));
     });
   }
   

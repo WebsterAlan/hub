@@ -12,28 +12,29 @@ String userToJson(User data) {
 
 class User {
   int id;
-  String firstName;
-  String lastName;
-  bool blocked;
-
+  String name;
+  String email;
+  String password;
+  
+//construtor da entidade
   User({
     this.id,
-    this.firstName,
-    this.lastName,
-    this.blocked,
+    this.name,
+    this.email,
+    this.password,
   });
 
   factory User.fromMap(Map<String, dynamic> json) => new User(
         id: json["id"],
-        firstName: json["first_name"],
-        lastName: json["last_name"],
-        blocked: json["blocked"] == 1,
+        name: json["name"],
+        email: json["email"],
+        password: json["password"],
       );
 
   Map<String, dynamic> toMap() => {
         "id": id,
-        "first_name": firstName,
-        "last_name": lastName,
-        "blocked": blocked,
+        "name": name,
+        "email": email,
+        "password": password,
       };
 }

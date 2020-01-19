@@ -2,13 +2,13 @@
 import 'package:flutter/material.dart';
 import 'package:hub/src/config/database.dart';
 import 'package:hub/src/entity/UserEntity.dart';
-import 'package:sqflite/sqflite.dart';
+
 
 class LoginMdl{
 
   //Esses valores estão setados na LoginPage como controllers
-  final TextEditingController ctrlTxtEdt1 = new TextEditingController();
-  final TextEditingController ctrlTxtEdt2 = new TextEditingController();
+  final TextEditingController ctrlTxtEdtEmailLogin = new TextEditingController();
+  final TextEditingController ctrlTxtEdtPasswordLogin = new TextEditingController();
 
   //Variável da classe
   bool result =  false;
@@ -16,18 +16,22 @@ class LoginMdl{
 //Provedor de Banco de Dados
   DBProvider provider = DBProvider.db;
 
-  void efetuarLogin(String email, String password){
-     
   
-  }
+  Future<bool> efetuarLogin(String email, String password) async {
+    final db = await provider.database;
+    List<Map> maps = await db.query("SELECT * FROM User WHERE email == $email AND password == $password");
+    if (maps.length > 0) {
+      return true;
+    }
+    return false;
+  } 
 
-  newClient(User newUser) async {
+  /*newClient(User newUser) async {
     
     final db = await provider.database;
     var res = await db.rawInsert(
       "INSERT Into Client (id,first_name)"
       " VALUES (${newUser.id},${newUser.firstName})");
     return res; 
-    
-  }
+  }*/
 }
