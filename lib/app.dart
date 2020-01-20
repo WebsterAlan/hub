@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hub/routes.dart';
-import 'package:hub/src/screens/Splash.dart';
+import 'package:hub/src/screens/LoginPageWidget.dart';
+
 
 class MyApp extends StatelessWidget {
   
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       onGenerateRoute: routes(),
-      home: Splash(),
+      //home: Splash(),
+      home: LoginPageWidget(),
     );
   }
 }
