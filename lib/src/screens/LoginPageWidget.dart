@@ -10,6 +10,9 @@ class LoginPageWidget extends StatefulWidget {
 class _LoginPageWidgetState extends State<LoginPageWidget> {
 
    ProviderPageController provider = new ProviderPageController();
+   static int pageCadastrar = 0;
+   static int pageLogin = 1;
+  
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +42,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
             bordeColor: Colors.white,
             label: "CADASTRE-SE",
             onTap: () {
-            ProviderPageController.of(context).toPage(0);
+            ProviderPageController.of(context).toPage(pageCadastrar);
             },
           ),
           Container(
@@ -50,7 +53,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
             textColor: Theme.of(context).accentColor,
             label: "LOGIN",
             onTap: () {
-              ProviderPageController.of(context).toPage(2);
+              ProviderPageController.of(context).toPage(pageLogin);
             },
           ),
         ],

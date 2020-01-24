@@ -35,7 +35,7 @@ class _LoginSignUpPageWidgetState extends State<LoginSignUpPageWidget> {
          
           GestureDetector(
             onTap: (){
-              ProviderPageController.of(context).toPage(2);
+              ProviderPageController.of(context).toPage(3);
             },
                       child: Container(
               width: double.infinity,
