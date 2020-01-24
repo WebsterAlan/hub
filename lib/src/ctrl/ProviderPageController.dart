@@ -8,14 +8,16 @@ class ProviderPageController extends InheritedWidget {
   ProviderPageController({this.controller, this.child}):super(child: child);
 
   static ProviderPageController of(BuildContext context){
-    return context.inheritFromWidgetOfExactType(ProviderPageController) as ProviderPageController;
-  }
+   return context.dependOnInheritedWidgetOfExactType<ProviderPageController>();
+  } 
 
 
-  void toPage(int page){
-    controller.animateToPage(page,
+   void toPage(int page) {
+    print("teste");
+     controller.animateToPage(page,
                   duration: Duration(milliseconds: 300),
                   curve: Curves.easeInOut);
+                  
   }
 
 

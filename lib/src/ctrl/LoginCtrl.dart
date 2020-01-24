@@ -43,6 +43,7 @@ class AppLoginCtrl implements LoginCtrl{
       Navigator.pushNamed(context, "/gallery");
     }*/
     Navigator.pushNamed(context, "/gallery");
+    
   }
 
  

@@ -47,7 +47,8 @@ RouteFactory routes() {
         screen = LoginSignUpPageWidget();
         break;
         default:
-        screen = LoginPage(loginCtrl: AppLoginCtrl(),);
+        //screen = LoginPage(loginCtrl: AppLoginCtrl(),);
+        screen = LoginSignUpPageWidget();
         break;
     }
     return MaterialPageRoute(builder: (BuildContext context) => screen);

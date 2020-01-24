@@ -14,6 +14,8 @@ dependencies:
   google_maps_flutter: ^0.5.21+15
   location: ^2.3.5
   font_awesome_flutter: ^8.5.0
+  firebase_auth: ^0.15.3+1
+  google_sign_in: ^4.1.1
   http: any
   sqflite: any
   path_provider: any
@@ -39,4 +41,5 @@ flutter:
        - images/ic_roteiro_igrejas.png
        - images/ic_roteiro_apoio_turistico.png
        - images/saunas.png
+       - images/google_logo.png
  

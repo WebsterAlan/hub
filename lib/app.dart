@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:hub/routes.dart';
-import 'package:hub/src/screens/LoginPageWidget.dart';
+import 'package:hub/src/screens/LoginWidget.dart';
 
 
 class MyApp extends StatelessWidget {
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       ),
       onGenerateRoute: routes(),
       //home: Splash(),
-      home: LoginPageWidget(),
+      home: LoginWidget(),
     );
   }
 }
