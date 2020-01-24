@@ -10,6 +10,7 @@ class LoginWidget extends StatefulWidget {
 }
 
 class _LoginWidgetState extends State<LoginWidget> {
+  
   PageController _controller;
 
   @override
@@ -34,7 +35,7 @@ class _LoginWidgetState extends State<LoginWidget> {
         children: <Widget>[
           //image
           Image.asset(
-            "assets/imgs/guia.png",
+            "images/guia.png",
             fit: BoxFit.cover,
           ),
           //pageview
