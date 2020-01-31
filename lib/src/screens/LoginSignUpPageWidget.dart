@@ -1,14 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:hub/src/ctrl/LoginCtrl.dart';
 import 'package:hub/src/widgets/CustomTextField.dart';
 import 'package:hub/src/ctrl/ProviderPageController.dart';
 import 'package:hub/src/widgets/CircleButton.dart';
 
 class LoginSignUpPageWidget extends StatefulWidget {
+
+   final LoginCtrl loginCtrl;
+
+   //Construtor
+   LoginSignUpPageWidget({this.loginCtrl});
+
   @override
   _LoginSignUpPageWidgetState createState() => _LoginSignUpPageWidgetState();
 }
 
 class _LoginSignUpPageWidgetState extends State<LoginSignUpPageWidget> {
+
+  static int pageCadastrar = 0;
+  static int pageLogin = 1;
+  
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -25,7 +37,11 @@ class _LoginSignUpPageWidgetState extends State<LoginSignUpPageWidget> {
 
           Container(height: 50,),
 
-          CustomTextField(label: "EMAIL", hint: "seuemail@email.com",),
+          CustomTextField(
+            label: "EMAIL", 
+            hint: "seuemail@email.com",
+            
+            ),
           Container(height: 25,),
           CustomTextField(label: "PASSWORD", hint: "***************",),
           Container(height: 25,),
@@ -35,9 +51,9 @@ class _LoginSignUpPageWidgetState extends State<LoginSignUpPageWidget> {
          
           GestureDetector(
             onTap: (){
-              ProviderPageController.of(context).toPage(3);
+              ProviderPageController.of(context).toPage(pageLogin);
             },
-                      child: Container(
+            child: Container(
               width: double.infinity,
               child: Text("já tem uma conta?",
                   textAlign: TextAlign.right,
@@ -52,6 +68,10 @@ class _LoginSignUpPageWidgetState extends State<LoginSignUpPageWidget> {
 
           CicleButton(
             label: "CADASTRE-SE",
+            onTap:() {
+              //ProviderPageController.of(context).toPage(pageLogin);
+              this.widget.loginCtrl.register(context);
+            }
           ),
         ],
       ),

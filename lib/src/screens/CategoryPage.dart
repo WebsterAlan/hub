@@ -77,8 +77,5 @@ Column getCardByTitle(String title){
         )
       ],
     );
-
-       
-
 }
 }

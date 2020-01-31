@@ -7,6 +7,7 @@ import 'package:hub/src/mdl/LoginMdl.dart';
 class LoginCtrl  {
   set view(LoginPageView value){}
   void buttonClick(BuildContext context){}
+  void register(BuildContext context){}
 }
 
 //Implementação
@@ -36,7 +37,7 @@ class AppLoginCtrl implements LoginCtrl{
     String password = this.loginMdl.ctrlTxtEdtPasswordLogin.text;
     
     bool result = await  loginMdl.efetuarLogin(email,password);
-      this._view.refreshLoginMdl(this.loginMdl);
+    this._view.refreshLoginMdl(this.loginMdl);
       
     if(result == true) {
       //Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryPage()));
@@ -46,7 +47,14 @@ class AppLoginCtrl implements LoginCtrl{
     
   }
 
- 
+  Future<void> register(BuildContext context) async {
+
+     String email = this.loginMdl.ctrlTxtEdtEmailLogin.text;
+     String password = this.loginMdl.ctrlTxtEdtPasswordLogin.text;
+     bool result = await  loginMdl.register();
+     this._view.refreshLoginMdl(this.loginMdl);
+  }
+
  
 }
 

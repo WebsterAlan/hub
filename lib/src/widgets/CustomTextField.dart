@@ -23,6 +23,7 @@ class CustomTextField extends StatelessWidget {
           ),
           Container(height: 10,),
           TextField(
+            
               autofocus: false,
               decoration: InputDecoration(
                 hintText: hint,

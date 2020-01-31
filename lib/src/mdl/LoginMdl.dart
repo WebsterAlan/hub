@@ -34,4 +34,11 @@ class LoginMdl{
       " VALUES (${newUser.id},${newUser.firstName})");
     return res; 
   }*/
+
+  Future<bool> register() async  {
+
+   return true; 
+  }
+    
+  
 }
