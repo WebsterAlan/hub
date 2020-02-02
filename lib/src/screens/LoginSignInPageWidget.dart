@@ -73,37 +73,7 @@ class _LoginSignInPageWidgetState extends State<LoginSignInPageWidget> {
           Container(height: 25),
           _lineTextLine(),
           Container(height: 25),
-          Row(
-            children: <Widget>[
-              Expanded(
-                child: CicleButton(
-                  backgroundColor: Colors.blue[800],
-                  icon: Icon(
-                    FontAwesomeIcons.facebookF,
-                    color: Colors.white,
-                    size: 14,
-                  ),
-                  label: "FACEBOOK",
-                  
-                ),
-              ),
-              Container(
-                width: 20,
-              ),
-              Expanded(
-                child: CicleButton(
-                  backgroundColor: Colors.red[700],
-                  icon: Icon(
-                    FontAwesomeIcons.google,
-                    color: Colors.white,
-                    size: 14,
-                  ),
-                  label: "GOOGLE",
-                ),
-              ),
-            ],
-          ),
-
+          _signInButton(),
           Container(height: 20),
           
         ],
@@ -122,7 +92,7 @@ class _LoginSignInPageWidgetState extends State<LoginSignInPageWidget> {
          mainAxisSize: MainAxisSize.min ,
          mainAxisAlignment:MainAxisAlignment.center ,
          children: <Widget>[
-           Image(image: AssetImage("assetName"),height: 35.0,),
+           Image(image: AssetImage("images/google_logo.png"),height: 35.0,),
            Padding(padding: const EdgeInsets.only(left: 10),
            child: Text("Sign in with Google",
            style: TextStyle(fontSize: 20, color: Colors.grey),

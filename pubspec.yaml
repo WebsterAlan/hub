@@ -42,4 +42,8 @@ flutter:
        - images/ic_roteiro_apoio_turistico.png
        - images/saunas.png
        - images/google_logo.png
- 
+       - images/guia_bh.jpg
+       - images/guia_df.jpg
+       - images/guia_floripa.jpg
+       - images/guia_salvador.jpg
+       - images/guia.png
