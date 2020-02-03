@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:hub/src/ctrl/sign_in.dart';
+import 'package:hub/src/screens/GaleryPage.dart';
 import 'package:hub/src/widgets/CircleButton.dart';
 import 'package:hub/src/widgets/CustomTextField.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 
 class LoginSignInPageWidget extends StatefulWidget {
   @override
@@ -11,7 +13,7 @@ class LoginSignInPageWidget extends StatefulWidget {
 class _LoginSignInPageWidgetState extends State<LoginSignInPageWidget> {
   
   
-  Widget _textForgot() {
+  Widget _textForgot(BuildContext context) {
     return Container(
       width: double.infinity,
       child: Text(
@@ -65,7 +67,7 @@ class _LoginSignInPageWidgetState extends State<LoginSignInPageWidget> {
           Container(height: 25),
           CustomTextField(label: "SENHA", hint: "***************"),
           Container(height: 25),
-          _textForgot(),
+          _textForgot(context),
           Container(height: 25),
           CicleButton(
             label: "ENTRAR",
@@ -73,17 +75,27 @@ class _LoginSignInPageWidgetState extends State<LoginSignInPageWidget> {
           Container(height: 25),
           _lineTextLine(),
           Container(height: 25),
-          _signInButton(),
+          _signInButton(context),
           Container(height: 20),
           
         ],
       ),
     );
   }
-  Widget _signInButton() {
+  Widget _signInButton(BuildContext context) {
     return OutlineButton(
        splashColor:  Colors.grey,
-       onPressed: (){},
+       onPressed: () {
+    signInWithGoogle().whenComplete(() {
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) {
+            return GaleryPage();
+          },
+        ),
+      );
+    });
+  },
        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
        highlightElevation: 0,
        borderSide: BorderSide(color: Colors.grey),
