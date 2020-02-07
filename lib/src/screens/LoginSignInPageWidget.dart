@@ -1,17 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:hub/src/ctrl/sign_in.dart';
-import 'package:hub/src/screens/GaleryPage.dart';
+import 'package:hub/src/ctrl/LoginCtrl.dart';
+import 'package:hub/src/mdl/LoginMdl.dart';
+import 'package:hub/src/screens/menu_city.dart';
 import 'package:hub/src/widgets/CircleButton.dart';
 import 'package:hub/src/widgets/CustomTextField.dart';
 
 
 class LoginSignInPageWidget extends StatefulWidget {
+
+final LoginCtrl loginCtrl;
+
+
+LoginSignInPageWidget({this.loginCtrl});
+
   @override
   _LoginSignInPageWidgetState createState() => _LoginSignInPageWidgetState();
 }
 
 class _LoginSignInPageWidgetState extends State<LoginSignInPageWidget> {
   
+  LoginMdl loginMdl;
   
   Widget _textForgot(BuildContext context) {
     return Container(
@@ -63,14 +71,21 @@ class _LoginSignInPageWidgetState extends State<LoginSignInPageWidget> {
           Icon(Icons.developer_mode,
               size: 50, color: Theme.of(context).accentColor),
           Spacer(),
-          CustomTextField(label: "EMAIL", hint: "nome@email.com"),
+          //CustomTextField(label: "EMAIL", hint: "nome@email.com"),
+          TextFormField(
+            controller: loginMdl.ctrlTxtEdtEmailLogin,
+          ),
           Container(height: 25),
-          CustomTextField(label: "SENHA", hint: "***************"),
+          //CustomTextField(label: "SENHA", hint: "***************"),
+          TextFormField(
+            controller: loginMdl.ctrlTxtEdtPasswordLogin,
+          ),
           Container(height: 25),
           _textForgot(context),
           Container(height: 25),
           CicleButton(
             label: "ENTRAR",
+            onTap: ()=>this.widget.loginCtrl.register(context),
           ),
           Container(height: 25),
           _lineTextLine(),
@@ -86,11 +101,11 @@ class _LoginSignInPageWidgetState extends State<LoginSignInPageWidget> {
     return OutlineButton(
        splashColor:  Colors.grey,
        onPressed: () {
-    signInWithGoogle().whenComplete(() {
+         this.widget.loginCtrl.signInWithGoogle().whenComplete(() {
       Navigator.of(context).push(
         MaterialPageRoute(
           builder: (context) {
-            return GaleryPage();
+            return HomePage();
           },
         ),
       );

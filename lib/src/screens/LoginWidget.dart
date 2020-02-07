@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hub/src/ctrl/LoginCtrl.dart';
 import 'package:hub/src/screens/LoginPageWidget.dart';
 import 'package:hub/src/screens/LoginSignInPageWidget.dart';
 import 'package:hub/src/screens/LoginSignUpPageWidget.dart';
@@ -47,7 +48,7 @@ class _LoginWidgetState extends State<LoginWidget> {
               children: <Widget>[
                 LoginSignUpPageWidget(),
                 LoginPageWidget(),
-                LoginSignInPageWidget(),
+                LoginSignInPageWidget(loginCtrl: AppLoginCtrl(),),
               ],
             ),
           ),

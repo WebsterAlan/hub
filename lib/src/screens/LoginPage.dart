@@ -1,8 +1,8 @@
 import 'package:hub/src/ctrl/LoginCtrl.dart';
 import 'package:hub/src/interface/LoginPageView.dart';
+import 'package:hub/src/screens/LoginSignUpPageWidget.dart';
+import 'package:hub/src/screens/RegisterPage.dart';
 import 'package:hub/src/screens/ResetPasswordPage.dart';
-import 'HomePage.dart';
-import 'package:hub/src/screens/SignupPage.dart';
 import 'package:flutter/material.dart';
 import 'package:hub/src/mdl/LoginMdl.dart';
 
@@ -138,7 +138,7 @@ class _LoginPageState extends State<LoginPage> implements LoginPageView{
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => HomePage(),
+                        builder: (context) => RegisterPage(),
                       ),
                     );
                   },
@@ -198,7 +198,7 @@ class _LoginPageState extends State<LoginPage> implements LoginPageView{
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => SignupPage(),
+                      builder: (context) => LoginSignUpPageWidget(),
                     ),
                   );
                 },

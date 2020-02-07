@@ -2,9 +2,9 @@
 import 'package:hub/src/ctrl/RegisterCtrl.dart';
 import 'package:hub/src/interface/RegisterPageView.dart';
 import 'package:hub/src/mdl/RegisterMdl.dart';
+import 'package:hub/src/screens/LoginPage.dart';
+import 'package:hub/src/screens/LoginSignUpPageWidget.dart';
 import 'package:hub/src/screens/ResetPasswordPage.dart';
-import 'HomePage.dart';
-import 'package:hub/src/screens/SignupPage.dart';
 import 'package:flutter/material.dart';
 
 
@@ -156,7 +156,7 @@ class _RegisterPageState extends State<RegisterPage> implements RegisterPageView
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => HomePage(),
+                        builder: (context) => LoginPage(),
                       ),
                     );
                   },
@@ -216,7 +216,7 @@ class _RegisterPageState extends State<RegisterPage> implements RegisterPageView
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => SignupPage(),
+                      builder: (context) => LoginSignUpPageWidget(),
                     ),
                   );
                 },

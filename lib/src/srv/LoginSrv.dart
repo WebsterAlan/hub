@@ -19,7 +19,6 @@ Future<User> sendUser({Map body}) async {
     if (statusCode < 200 || statusCode > 400 || json == null) {
       throw new Exception("Error while fetching data");
     }
-
     return User.fromJson(json.decode(response.body));
   });
 }
