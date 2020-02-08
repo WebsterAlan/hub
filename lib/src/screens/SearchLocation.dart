@@ -11,6 +11,12 @@ class __SearchlocationState extends State<SearchLocation> {
 
   MapController mapController = new MapController();
 
+  getPermission() async {
+    final GeolocationResult result = await Geolocation.requestLocationPermission(
+    
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     
@@ -22,7 +28,8 @@ class __SearchlocationState extends State<SearchLocation> {
          minZoom: 5.0
        ),
        layers: new TileLayerOptions(
-         urlTemplate: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+         urlTemplate: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+         subdomains: ['a','b','c']
        ),
        ),
 
