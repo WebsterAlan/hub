@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:geolocation/geolocation.dart';
@@ -32,15 +31,6 @@ class __SearchlocationState extends State<SearchLocation> {
     });
   }
    buildMap(){
-       /*getLocation().then((response){
-          if(response.isSucessful){
-            print("correto");
-              response.listen((value){
-               mapController.move(new LatLng(value.location.latitude, value.location.longitude),15.0);
-                 
-              });
-            }
-         }); */
     StreamSubscription<LocationResult> subscription = Geolocation.currentLocation(accuracy: LocationAccuracy.best).listen((result) {
            if(result.isSuccessful) {
              mapController.move(new LatLng(result.location.latitude, result.location.longitude),15.0);

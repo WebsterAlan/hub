@@ -4990,6 +4990,7 @@ firebase_core_platform_interface
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 --------------------------------------------------------------------------------
 firebase_core_web
+flutter_plugin_android_lifecycle
 
 // Copyright 2019 The Chromium Authors. All rights reserved.
 //
