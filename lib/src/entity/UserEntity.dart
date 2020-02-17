@@ -1,5 +1,7 @@
 import 'dart:convert';
 
+import 'package:json_annotation/json_annotation.dart';
+
 User userFromJson(String str) {
   final jsonData = json.decode(str);
   return User.fromMap(jsonData);
@@ -10,6 +12,7 @@ String userToJson(User data) {
   return json.encode(dyn);
 }
 
+@JsonSerializable()
 class User {
   int id;
   String name;
