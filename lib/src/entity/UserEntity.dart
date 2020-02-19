@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:html';
 
 import 'package:json_annotation/json_annotation.dart';
 
@@ -14,6 +15,20 @@ String userToJson(User data) {
 
 @JsonSerializable()
 class User {
+  int codUsuario;
+  String nomUsuario;
+  String desEmail;
+  CharacterData desSenha;
+  String indSexo;
+  CharacterData indOrientacaoSexual;
+  DateTime dtaNascimento;
+  int idFacebook;
+  int idGooglePlus;
+  DateTime dtaHraCadastro;
+  DateTime dtaHraUltimaModificacao;
+  String indStatus;
+  String indExcluido;
+  //Others Attributtes 
   int id;
   String name;
   String email;
@@ -25,6 +40,19 @@ class User {
     this.name,
     this.email,
     this.password,
+    this.codUsuario,
+    this.nomUsuario,
+    this.desEmail,
+    this.desSenha,
+    this.indSexo,
+    this.indOrientacaoSexual,
+    this.dtaNascimento,
+    this.idFacebook,
+    this.idGooglePlus,
+    this.dtaHraCadastro,
+    this.dtaHraUltimaModificacao,
+    this.indStatus,
+    this.indExcluido,
   });
 
   factory User.fromMap(Map<String, dynamic> json) => new User(
@@ -32,6 +60,19 @@ class User {
         name: json["name"],
         email: json["email"],
         password: json["password"],
+        codUsuario: json["codUsuario"],
+        nomUsuario: json["nomUsuario"],
+        desEmail: json["desEmail"],
+        desSenha: json["desSenha"],
+        indSexo: json["indSexo"],
+        indOrientacaoSexual: json["indOrientacaoSexual"],
+        dtaNascimento: json["dtaNascimento"],
+        idFacebook: json["idFacebook"],
+        idGooglePlus: json["idGooglePlus"],
+        dtaHraCadastro: json["dtaHraCadastro"],
+        dtaHraUltimaModificacao: json["dtaHraUltimaModificacao"],
+        indStatus: json["indStatus"],
+        indExcluido: json["indExcluido"],
       );
 
   Map<String, dynamic> toMap() => {

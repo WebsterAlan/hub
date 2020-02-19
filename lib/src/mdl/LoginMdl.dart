@@ -16,11 +16,11 @@ class LoginMdl{
   //Variável da classe
   bool result =  false;
 
-//Provedor de Banco de Dados
+  //Provedor de Banco de Dados
   DBProvider provider = DBProvider.db;
 
-//Instância Firestore
-var firebaseDatabase = Firestore.instance;
+  //Instância Firestore
+  final firebaseDatabase = Firestore.instance;
 
   
   Future<bool> efetuarLogin(String email, String password) async {
