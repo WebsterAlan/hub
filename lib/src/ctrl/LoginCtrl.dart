@@ -5,6 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 
+
 //Atua como se fosse uma interface
 class LoginCtrl  {
   set view(LoginPageView value){}
@@ -70,7 +71,6 @@ Future<String> signInWithGoogle() async {
   
   final GoogleSignInAccount googleSigninAccount = await googleSignIn.signIn();
   final GoogleSignInAuthentication googleSignInAuthentication = await googleSigninAccount.authentication;
-  
   final AuthCredential credential = GoogleAuthProvider.getCredential(idToken: googleSignInAuthentication.accessToken, accessToken: googleSignInAuthentication.idToken);
   final AuthResult authResult = await _auth.signInWithCredential(credential);
   final FirebaseUser user = authResult.user;

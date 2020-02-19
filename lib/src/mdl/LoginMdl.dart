@@ -2,6 +2,9 @@
 import 'package:flutter/material.dart';
 import 'package:hub/src/config/database.dart';
 import 'package:hub/src/entity/UserEntity.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:sqflite/sqflite.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 
 class LoginMdl{
@@ -15,6 +18,9 @@ class LoginMdl{
 
 //Provedor de Banco de Dados
   DBProvider provider = DBProvider.db;
+
+//Instância Firestore
+var firebaseDatabase = Firestore.instance;
 
   
   Future<bool> efetuarLogin(String email, String password) async {
