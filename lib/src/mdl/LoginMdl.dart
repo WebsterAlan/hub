@@ -24,11 +24,9 @@ class LoginMdl{
   Future<bool> efetuarLogin(String email, String password) async {
     
     var dbStorie = dbStore.dbInstance;
-    
-    //Movido para DbFirestore de criação automática
-    /*dbStorie.collection('usuario').document().setData({ 'email': email, 'password': password });
-    dbStorie.collection('categoria').document().setData({ 'cat1': email, 'cat2': password }); */
-  }
+    //efetuar verificação de login
+}
+
     
     
     
