@@ -11,7 +11,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
 
    ProviderPageController provider = new ProviderPageController();
    static int pageCadastrar = 0;
-   static int pageLogin = 1;
+   static int pageLogin = 2;
   
 
   @override

@@ -3,7 +3,7 @@ import 'package:hub/src/ctrl/LoginCtrl.dart';
 import 'package:hub/src/mdl/LoginMdl.dart';
 import 'package:hub/src/screens/menu_city.dart';
 import 'package:hub/src/widgets/CircleButton.dart';
-import 'package:hub/src/widgets/CustomTextField.dart';
+
 
 
 class LoginSignInPageWidget extends StatefulWidget {
@@ -19,7 +19,7 @@ LoginSignInPageWidget({this.loginCtrl});
 
 class _LoginSignInPageWidgetState extends State<LoginSignInPageWidget> {
   
-  LoginMdl loginMdl;
+  LoginMdl loginMdl = new LoginMdl();
   
   Widget _textForgot(BuildContext context) {
     return Container(
@@ -85,7 +85,7 @@ class _LoginSignInPageWidgetState extends State<LoginSignInPageWidget> {
           Container(height: 25),
           CicleButton(
             label: "ENTRAR",
-            onTap: ()=>this.widget.loginCtrl.register(context),
+            onTap: ()=>this.widget.loginCtrl.buttonClick(context),
           ),
           Container(height: 25),
           _lineTextLine(),

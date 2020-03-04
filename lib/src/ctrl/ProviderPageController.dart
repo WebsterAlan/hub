@@ -13,8 +13,7 @@ class ProviderPageController extends InheritedWidget {
 
 
    void toPage(int page) {
-    print("teste");
-     controller.animateToPage(page,
+    controller.animateToPage(page,
                   duration: Duration(milliseconds: 300),
                   curve: Curves.easeInOut);
                   

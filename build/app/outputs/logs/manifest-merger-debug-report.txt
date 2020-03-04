@@ -9,6 +9,8 @@ MERGED from [:google_sign_in] /home/danger/Documentos/project/git_hub/hub/build/
 MERGED from [:google_sign_in_web] /home/danger/Documentos/project/git_hub/hub/build/google_sign_in_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:firebase_auth] /home/danger/Documentos/project/git_hub/hub/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_auth_web] /home/danger/Documentos/project/git_hub/hub/build/firebase_auth_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:cloud_firestore] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:cloud_firestore_web] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:firebase_core] /home/danger/Documentos/project/git_hub/hub/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [:firebase_core_web] /home/danger/Documentos/project/git_hub/hub/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:sqflite] /home/danger/Documentos/project/git_hub/hub/build/sqflite/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
@@ -18,6 +20,7 @@ MERGED from [:google_maps_flutter] /home/danger/Documentos/project/git_hub/hub/b
 MERGED from [:flutter_plugin_android_lifecycle] /home/danger/Documentos/project/git_hub/hub/build/flutter_plugin_android_lifecycle/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:path_provider] /home/danger/Documentos/project/git_hub/hub/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:location] /home/danger/Documentos/project/git_hub/hub/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-10:12
+MERGED from [androidx.multidex:multidex:2.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/01ca3aad6fb6483bc50ae08c75176fb6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/cdf0de4b2786241ab9e90f077b2e3726/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/310983e71798cb96dcd9b0850e42012e/AndroidManifest.xml:17:1-38:12
 MERGED from [com.google.firebase:firebase-auth:19.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/3f883a4d69ab2b2d56c960a459bed146/AndroidManifest.xml:17:1-42:12
@@ -26,6 +29,7 @@ MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /home/
 MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b7c80f1a68f489f57c8f4886331fb0e2/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/danger/.gradle/caches/transforms-2/files-2.1/1e09684bbff59a70679d13599ebd681f/AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/edfe484aac47e6a105cb1b81831c7177/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b6a1a7f38eee916b3aa6fd83c19403f2/AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/a325d95b822b9a60aab8f405fdefb73e/AndroidManifest.xml:2:1-10:12
 MERGED from [com.google.firebase:firebase-common:19.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/c554b31b09b00514ae9e21e0bcf12cc3/AndroidManifest.xml:15:1-39:12
@@ -60,12 +64,15 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/danger/.gra
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/2452b26616cbf4f53a7edb84b4c906a8/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/e9f7f24eb44ba9f2da2819dc7be79e4a/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/danger/.gradle/caches/transforms-2/files-2.1/f7fced56078a1aebad1c3eead936cb11/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/884f2348f57b456e7d972992ffff75d6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-components:16.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/4d218b61dfe03f12223b2823623814a4/AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/884f2348f57b456e7d972992ffff75d6/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/f65b91a3ca446c7432a6dc3d0c0dd279/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b87da24fb53dd8c8253aedf509729fcf/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/dfe2680748845d1ebe418271476be518/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/17c6253cc98012406eecfb41f7ee43b1/AndroidManifest.xml:17:1-22:12
+MERGED from [io.grpc:grpc-android:1.21.0] /home/danger/.gradle/caches/transforms-2/files-2.1/4a1ed336396a3b90ed44149e370f93b8/AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/22e8ebac3707c293dd0c8032a69a893a/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/84a0bf44f1333e19245bab66e74dade5/AndroidManifest.xml:2:1-11:12
 INJECTED from /home/danger/Documentos/project/git_hub/hub/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /home/danger/Documentos/project/git_hub/hub/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 INJECTED from /home/danger/Documentos/project/git_hub/hub/android/app/src/debug/AndroidManifest.xml:1:1-7:12
@@ -95,6 +102,8 @@ MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /home/dang
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/2bcdfede98ec2089661aed0a112f1aa7/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/25dac53b1fa571f6c7adda2c43c01031/AndroidManifest.xml:22:5-67
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/25dac53b1fa571f6c7adda2c43c01031/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:14:5-67
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b6a1a7f38eee916b3aa6fd83c19403f2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b6a1a7f38eee916b3aa6fd83c19403f2/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/d7a7fba92fc61e3440bee4f722b313fa/AndroidManifest.xml:23:5-67
@@ -107,6 +116,8 @@ application
 ADDED from /home/danger/Documentos/project/git_hub/hub/android/app/src/main/AndroidManifest.xml:11:5-38:19
 MERGED from [:firebase_auth] /home/danger/Documentos/project/git_hub/hub/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_auth] /home/danger/Documentos/project/git_hub/hub/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] /home/danger/Documentos/project/git_hub/hub/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] /home/danger/Documentos/project/git_hub/hub/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/cdf0de4b2786241ab9e90f077b2e3726/AndroidManifest.xml:7:5-20
@@ -125,6 +136,8 @@ MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/danger/.gra
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/danger/.gradle/caches/transforms-2/files-2.1/1e09684bbff59a70679d13599ebd681f/AndroidManifest.xml:22:5-37:19
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/edfe484aac47e6a105cb1b81831c7177/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/edfe484aac47e6a105cb1b81831c7177/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:16:5-24:19
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b6a1a7f38eee916b3aa6fd83c19403f2/AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b6a1a7f38eee916b3aa6fd83c19403f2/AndroidManifest.xml:28:5-45:19
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/a325d95b822b9a60aab8f405fdefb73e/AndroidManifest.xml:7:5-8:19
@@ -211,6 +224,10 @@ MERGED from [:firebase_auth] /home/danger/Documentos/project/git_hub/hub/build/f
 MERGED from [:firebase_auth] /home/danger/Documentos/project/git_hub/hub/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_auth_web] /home/danger/Documentos/project/git_hub/hub/build/firebase_auth_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_auth_web] /home/danger/Documentos/project/git_hub/hub/build/firebase_auth_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore_web] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore_web] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] /home/danger/Documentos/project/git_hub/hub/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core] /home/danger/Documentos/project/git_hub/hub/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:firebase_core_web] /home/danger/Documentos/project/git_hub/hub/build/firebase_core_web/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
@@ -229,6 +246,8 @@ MERGED from [:path_provider] /home/danger/Documentos/project/git_hub/hub/build/p
 MERGED from [:path_provider] /home/danger/Documentos/project/git_hub/hub/build/path_provider/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:location] /home/danger/Documentos/project/git_hub/hub/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:location] /home/danger/Documentos/project/git_hub/hub/build/location/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/01ca3aad6fb6483bc50ae08c75176fb6/AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/01ca3aad6fb6483bc50ae08c75176fb6/AndroidManifest.xml:20:5-43
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/cdf0de4b2786241ab9e90f077b2e3726/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-analytics:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/cdf0de4b2786241ab9e90f077b2e3726/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-maps:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/310983e71798cb96dcd9b0850e42012e/AndroidManifest.xml:20:5-44
@@ -245,6 +264,8 @@ MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/danger/.gra
 MERGED from [com.google.android.gms:play-services-auth:16.0.1] /home/danger/.gradle/caches/transforms-2/files-2.1/1e09684bbff59a70679d13599ebd681f/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/edfe484aac47e6a105cb1b81831c7177/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/edfe484aac47e6a105cb1b81831c7177/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b6a1a7f38eee916b3aa6fd83c19403f2/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b6a1a7f38eee916b3aa6fd83c19403f2/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-auth-interop:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/a325d95b822b9a60aab8f405fdefb73e/AndroidManifest.xml:5:5-44
@@ -313,10 +334,10 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/danger/.gradle/
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/e9f7f24eb44ba9f2da2819dc7be79e4a/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/danger/.gradle/caches/transforms-2/files-2.1/f7fced56078a1aebad1c3eead936cb11/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/danger/.gradle/caches/transforms-2/files-2.1/f7fced56078a1aebad1c3eead936cb11/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/884f2348f57b456e7d972992ffff75d6/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/884f2348f57b456e7d972992ffff75d6/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:16.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/4d218b61dfe03f12223b2823623814a4/AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:16.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/4d218b61dfe03f12223b2823623814a4/AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/884f2348f57b456e7d972992ffff75d6/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/884f2348f57b456e7d972992ffff75d6/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/f65b91a3ca446c7432a6dc3d0c0dd279/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/f65b91a3ca446c7432a6dc3d0c0dd279/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b87da24fb53dd8c8253aedf509729fcf/AndroidManifest.xml:20:5-44
@@ -325,6 +346,12 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/danger/.gradle/cach
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/dfe2680748845d1ebe418271476be518/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/17c6253cc98012406eecfb41f7ee43b1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/17c6253cc98012406eecfb41f7ee43b1/AndroidManifest.xml:20:5-44
+MERGED from [io.grpc:grpc-android:1.21.0] /home/danger/.gradle/caches/transforms-2/files-2.1/4a1ed336396a3b90ed44149e370f93b8/AndroidManifest.xml:7:5-9:41
+MERGED from [io.grpc:grpc-android:1.21.0] /home/danger/.gradle/caches/transforms-2/files-2.1/4a1ed336396a3b90ed44149e370f93b8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/22e8ebac3707c293dd0c8032a69a893a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/22e8ebac3707c293dd0c8032a69a893a/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/84a0bf44f1333e19245bab66e74dade5/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/84a0bf44f1333e19245bab66e74dade5/AndroidManifest.xml:7:5-9:41
 INJECTED from /home/danger/Documentos/project/git_hub/hub/android/app/src/debug/AndroidManifest.xml
 INJECTED from /home/danger/Documentos/project/git_hub/hub/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
@@ -335,12 +362,16 @@ INJECTED from /home/danger/Documentos/project/git_hub/hub/android/app/src/debug/
 		INJECTED from /home/danger/Documentos/project/git_hub/hub/android/app/src/debug/AndroidManifest.xml
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:firebase_auth] /home/danger/Documentos/project/git_hub/hub/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] /home/danger/Documentos/project/git_hub/hub/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] /home/danger/Documentos/project/git_hub/hub/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-auth:19.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/3f883a4d69ab2b2d56c960a459bed146/AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.firebase:firebase-auth:19.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/3f883a4d69ab2b2d56c960a459bed146/AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/25dac53b1fa571f6c7adda2c43c01031/AndroidManifest.xml:27:9-33:19
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/25dac53b1fa571f6c7adda2c43c01031/AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:17:9-23:19
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:17:9-23:19
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b6a1a7f38eee916b3aa6fd83c19403f2/AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b6a1a7f38eee916b3aa6fd83c19403f2/AndroidManifest.xml:29:9-35:19
 MERGED from [com.google.firebase:firebase-common:19.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/c554b31b09b00514ae9e21e0bcf12cc3/AndroidManifest.xml:32:9-36:35
@@ -359,6 +390,12 @@ ADDED from [:firebase_auth] /home/danger/Documentos/project/git_hub/hub/build/fi
 		ADDED from [:firebase_auth] /home/danger/Documentos/project/git_hub/hub/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_auth] /home/danger/Documentos/project/git_hub/hub/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar
+ADDED from [:cloud_firestore] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:cloud_firestore] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:cloud_firestore] /home/danger/Documentos/project/git_hub/hub/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar
 ADDED from [:firebase_core] /home/danger/Documentos/project/git_hub/hub/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
@@ -379,12 +416,16 @@ MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /home/dang
 MERGED from [com.google.android.gms:play-services-measurement:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/2bcdfede98ec2089661aed0a112f1aa7/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/25dac53b1fa571f6c7adda2c43c01031/AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/25dac53b1fa571f6c7adda2c43c01031/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:13:5-79
+MERGED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b6a1a7f38eee916b3aa6fd83c19403f2/AndroidManifest.xml:22:5-79
 MERGED from [com.google.firebase:firebase-iid:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b6a1a7f38eee916b3aa6fd83c19403f2/AndroidManifest.xml:22:5-79
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/d7a7fba92fc61e3440bee4f722b313fa/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/d7a7fba92fc61e3440bee4f722b313fa/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/04826f4f1abc4bed921649ad3de1f5ba/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.0] /home/danger/.gradle/caches/transforms-2/files-2.1/04826f4f1abc4bed921649ad3de1f5ba/AndroidManifest.xml:24:5-79
+MERGED from [io.grpc:grpc-android:1.21.0] /home/danger/.gradle/caches/transforms-2/files-2.1/4a1ed336396a3b90ed44149e370f93b8/AndroidManifest.xml:11:5-79
+MERGED from [io.grpc:grpc-android:1.21.0] /home/danger/.gradle/caches/transforms-2/files-2.1/4a1ed336396a3b90ed44149e370f93b8/AndroidManifest.xml:11:5-79
 	android:name
 		ADDED from [com.google.android.gms:play-services-maps:17.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/310983e71798cb96dcd9b0850e42012e/AndroidManifest.xml:23:22-76
 uses-feature#0x00020000
@@ -507,6 +548,12 @@ ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/danger/.grad
 		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/danger/.gradle/caches/transforms-2/files-2.1/1e09684bbff59a70679d13599ebd681f/AndroidManifest.xml:36:13-107
 	android:name
 		ADDED from [com.google.android.gms:play-services-auth:16.0.1] /home/danger/.gradle/caches/transforms-2/files-2.1/1e09684bbff59a70679d13599ebd681f/AndroidManifest.xml:34:13-89
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:20:13-22:85
+	android:value
+		ADDED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:22:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-firestore:21.3.0] /home/danger/.gradle/caches/transforms-2/files-2.1/6359ab4e32399448f1b4410e396871c1/AndroidManifest.xml:21:17-111
 uses-permission#com.google.android.c2dm.permission.RECEIVE
 ADDED from [com.google.firebase:firebase-iid:19.0.0] /home/danger/.gradle/caches/transforms-2/files-2.1/b6a1a7f38eee916b3aa6fd83c19403f2/AndroidManifest.xml:26:5-82
 	android:name

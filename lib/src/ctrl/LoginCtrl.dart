@@ -42,7 +42,7 @@ class AppLoginCtrl implements LoginCtrl{
 
   @override
   Future<void> buttonClick(BuildContext context) async {
-    /*String email = this.loginMdl.ctrlTxtEdtEmailLogin.text;
+    String email = this.loginMdl.ctrlTxtEdtEmailLogin.text;
     String password = this.loginMdl.ctrlTxtEdtPasswordLogin.text;
     
     bool result = await  loginMdl.efetuarLogin(email,password);
@@ -51,7 +51,7 @@ class AppLoginCtrl implements LoginCtrl{
     if(result == true) {
       //Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryPage()));
       Navigator.pushNamed(context, "/gallery");
-    }*/
+    }
     Navigator.pushNamed(context, "/gallery");
     
   }

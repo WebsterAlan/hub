@@ -1,10 +1,8 @@
 
 import 'package:flutter/material.dart';
+import 'package:hub/src/config/DbFirestore.dart';
 import 'package:hub/src/config/database.dart';
-import 'package:hub/src/entity/UserEntity.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:sqflite/sqflite.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+
 
 
 class LoginMdl{
@@ -20,17 +18,28 @@ class LoginMdl{
   DBProvider provider = DBProvider.db;
 
   //Instância Firestore
-  final firebaseDatabase = Firestore.instance;
+  DbFirestore dbStore = DbFirestore.dbFirestore;
 
   
   Future<bool> efetuarLogin(String email, String password) async {
-    final db = await provider.database;
+    
+    var dbStorie = dbStore.dbInstance;
+    
+    //Movido para DbFirestore de criação automática
+    /*dbStorie.collection('usuario').document().setData({ 'email': email, 'password': password });
+    dbStorie.collection('categoria').document().setData({ 'cat1': email, 'cat2': password }); */
+  }
+    
+    
+    
+    
+   /* final  db = await provider.database;
     List<Map> maps = await db.query("SELECT * FROM User WHERE email == $email AND password == $password");
     if (maps.length > 0) {
       return true;
     }
-    return false;
-  } 
+    return false; 
+  } */
 
   /*newClient(User newUser) async {
     

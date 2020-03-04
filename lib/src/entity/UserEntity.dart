@@ -1,7 +1,7 @@
 import 'dart:convert';
+import 'package:json_annotation/json_annotation.dart';
 import 'dart:html';
 
-import 'package:json_annotation/json_annotation.dart';
 
 User userFromJson(String str) {
   final jsonData = json.decode(str);
@@ -18,9 +18,9 @@ class User {
   int codUsuario;
   String nomUsuario;
   String desEmail;
-  CharacterData desSenha;
+  String desSenha;
   String indSexo;
-  CharacterData indOrientacaoSexual;
+  String indOrientacaoSexual;
   DateTime dtaNascimento;
   int idFacebook;
   int idGooglePlus;
@@ -80,6 +80,19 @@ class User {
         "name": name,
         "email": email,
         "password": password,
+        "codUsuario": codUsuario,
+        "nomUsuario": nomUsuario,
+        "desEmail": desEmail,
+        "desSenha": desSenha,
+        "indSexo": indSexo,
+        "indOrientacaoSexual": indOrientacaoSexual,
+        "dtaNascimento": dtaNascimento,
+        "idFacebook": idFacebook,
+        "idGooglePlus": idGooglePlus,
+        "dtaHraCadastro": dtaHraCadastro,
+        "dtaHraUltimaModificacao": dtaHraUltimaModificacao,
+        "indStatus": indStatus,
+        "indExcluido": indExcluido,
       };
 
   factory User.fromJson(Map<String, dynamic> json) {
@@ -88,6 +101,19 @@ class User {
       name: json['name'],
       email: json['email'],
       password: json['password'],
+      codUsuario: json["codUsuario"],
+      nomUsuario: json["nomUsuario"],
+      desEmail: json["desEmail"],
+      desSenha: json["desSenha"],
+      indSexo: json["indSexo"],
+      indOrientacaoSexual: json["indOrientacaoSexual"],
+      dtaNascimento: json["dtaNascimento"],
+      idFacebook: json["idFacebook"],
+      idGooglePlus: json["idGooglePlus"],
+      dtaHraCadastro: json["dtaHraCadastro"],
+      dtaHraUltimaModificacao: json["dtaHraUltimaModificacao"],
+      indStatus: json["indStatus"],
+      indExcluido: json["indExcluido"],
     );
   }
 }

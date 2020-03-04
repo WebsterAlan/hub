@@ -1,4 +1,10 @@
-#Sat Feb 08 23:15:16 BRT 2020
-base.0=/home/danger/Documentos/project/git_hub/hub/build/app/intermediates/transforms/dexMerger/debug/0
+#Wed Mar 04 10:02:06 BRT 2020
+path.2=classes3.dex
+path.1=classes2.dex
 path.0=classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
 renamed.0=classes.dex
+base.2=/home/danger/Documentos/project/git_hub/hub/build/app/intermediates/transforms/dexMerger/debug/0
+base.1=/home/danger/Documentos/project/git_hub/hub/build/app/intermediates/transforms/dexMerger/debug/0
+base.0=/home/danger/Documentos/project/git_hub/hub/build/app/intermediates/transforms/dexMerger/debug/0
