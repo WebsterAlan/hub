@@ -2,6 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:hub/src/config/DbFirestore.dart';
 import 'package:hub/src/config/database.dart';
+import 'package:hub/src/entity/UserEntity.dart';
+import 'package:hub/src/srv/LoginSrv.dart';
 
 
 
@@ -19,11 +21,14 @@ class LoginMdl{
 
   //Instância Firestore
   DbFirestore dbStore = DbFirestore.dbFirestore;
-
+   
   
   Future<bool> efetuarLogin(String email, String password) async {
     
-    var dbStorie = dbStore.dbInstance;
+    Future<User> user  = fetchUser();
+    print(user);
+
+    //var dbStorie = dbStore.dbInstance;
     //efetuar verificação de login
 }
 

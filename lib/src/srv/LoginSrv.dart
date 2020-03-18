@@ -4,11 +4,14 @@ import 'package:http/http.dart' as http;
 
 String urlBase = "https://";
  
+ //envia dados do usuário e recebe uma validação
  Future<User> fetchUser() async {
     var response = await http.get(
         Uri.encodeFull(urlBase),
         headers: {"Accept": "application/json"}
     );
+    print(User.fromJson(json.decode(response.body)));
+    
     return User.fromJson(json.decode(response.body));
 } 
 

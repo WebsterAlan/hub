@@ -1,18 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:hub/src/screens/Home.dart';
 
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: HomePage(),
-  ));
-}
 
-class HomePage extends StatefulWidget {
+class MenuCity  extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _MenuCityState createState() => _MenuCityState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _MenuCityState extends State<MenuCity> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -27,10 +22,10 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   children: <Widget>[
                     SizedBox(height: 20.0,),
-                    dayItem('Florianópolis', 'images/guia_floripa.jpg'),  
-                    dayItem('Brasília', 'images/guia_df.jpg'),              
-                    dayItem('Salvador', 'images/guia_salvador.jpg'),
-                    dayItem('Belo Horizonte', 'images/guia_bh.jpg'),
+                    dayItem('Florianópolis', 'images/guia_floripa.jpg',context),  
+                    dayItem('Brasília', 'images/guia_df.jpg',context),              
+                    dayItem('Salvador', 'images/guia_salvador.jpg',context),
+                    dayItem('Belo Horizonte', 'images/guia_bh.jpg',context),
                    
                   ],
                 ),
@@ -46,16 +41,21 @@ class _HomePageState extends State<HomePage> {
 
  
 
-  Widget dayItem(String name, String img){
-    return Card(
-      child: Stack(
+  Widget dayItem(String name, String img,BuildContext context){
+    return Card( 
+      child:
+       new GestureDetector(
+        onTap:()=> Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) {
+            return Home();
+          })),
+       child: Stack(
         children: <Widget>[
           Container(
             width: double.infinity,
             height: 140.0,
             decoration: BoxDecoration(
-            
-              
               image: DecorationImage(
                 image: AssetImage(img),
                 fit: BoxFit.cover,
@@ -66,11 +66,11 @@ class _HomePageState extends State<HomePage> {
             bottom: 12.0,
             right: 12.0,
             child: Container(
+              
               child: Text(
                 name,
                 style: TextStyle(
                   color: Colors.white,
-                  
                   fontSize: 15.0,
                   shadows: <Shadow> [
                     Shadow(
@@ -83,6 +83,6 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-    );
+    ));
   }
 }

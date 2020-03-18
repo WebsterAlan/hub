@@ -3,6 +3,8 @@ import 'package:hub/src/interface/LoginPageView.dart';
 import 'package:hub/src/mdl/LoginMdl.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:hub/src/screens/LoginWidget.dart';
+import 'package:hub/src/screens/menu_city.dart';
 
 
 
@@ -50,9 +52,22 @@ class AppLoginCtrl implements LoginCtrl{
       
     if(result == true) {
       //Navigator.push(context, MaterialPageRoute(builder: (context) => CategoryPage()));
-      Navigator.pushNamed(context, "/gallery");
+      //Navigator.pushNamed(context, "/gallery");
+      Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) {
+            return MenuCity();
+          },
+        ),
+      );
     }
-    Navigator.pushNamed(context, "/gallery");
+    Navigator.of(context).push(
+        MaterialPageRoute(
+          builder: (context) {
+            return LoginWidget();
+          },
+        ),
+      );
     
   }
 

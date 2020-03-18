@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:navigation_dot_bar/navigation_dot_bar.dart';
+import 'listEstabelecimento.dart';
+import 'package:hub/src/screens/Home.dart';
+
 
 void main() {
   runApp(MaterialApp(
@@ -72,15 +75,15 @@ class _HomeEventosState extends State<HomeEventos> {
                     
                    
                     SizedBox(height: 16.0,),
-                    dayItem('Steven Strange', 'assets/images/strange.jpg', '16', 'SEG'),
+                    dayItem('Evento 1', 'assets/images/01.jpg', '16', 'SEG'),
                     SizedBox(height: 16.0,),
-                    dayItem('Bruce Banner', 'assets/images/banner.jpg', '19', 'TER'),
+                    dayItem('Evento 2', 'assets/images/02.jpg', '19', 'TER'),
                     SizedBox(height: 16.0,),
-                    dayItem('Natasha Romanof', 'assets/images/natasha.jpeg', '20', 'QUA'),
+                    dayItem('Evento 3', 'assets/images/03.jpg', '20', 'QUA'),
                     SizedBox(height: 16.0,),
-                    dayItem('Thor', 'assets/images/thor.jpg', '21', 'QUI'),
+                    dayItem('Evento 4', 'assets/images/04.jpg', '21', 'QUI'),
                     SizedBox(height: 16.0,),
-                    dayItem('Steve Rogers', 'assets/images/steve.jpg', '22', 'SEX'),
+                    dayItem('Evento 5', 'assets/images/05.jpg', '22', 'SEX'),
                     SizedBox(height: 8.0,),
                   ],
                 ),
@@ -90,13 +93,20 @@ class _HomeEventosState extends State<HomeEventos> {
         ),
       ),
     bottomNavigationBar: BottomNavigationDotBar ( 
-      items: <BottomNavigationDotBarItem>[
-        BottomNavigationDotBarItem(icon: Icons.art_track, onTap: () { /* Cualquier funcion - [abrir nueva venta] */ }),
-        BottomNavigationDotBarItem(icon: Icons.date_range , onTap: () { /* Cualquier funcion - [abrir nueva venta] */ }),
-        BottomNavigationDotBarItem(icon: Icons.map, onTap: () { /* Cualquier funcion - [abrir nueva venta] */ }),
-        BottomNavigationDotBarItem(icon: Icons.room, onTap: () { /* Cualquier funcion - [abrir nueva venta] */ }),
+        items: <BottomNavigationDotBarItem>[
+        BottomNavigationDotBarItem(icon: Icons.description, onTap: () {Navigator.push(
+                                context, MaterialPageRoute(builder: (context) => Home())); }),
+
+         BottomNavigationDotBarItem(icon: Icons.description, onTap: () {Navigator.push(
+                                context, MaterialPageRoute(builder: (context) => HomeEventos())); }),
+
+        BottomNavigationDotBarItem(icon: Icons.alarm_add, onTap: () { Navigator.push(
+                                context, MaterialPageRoute(builder: (context)=>Listagem()));}),
+
+        BottomNavigationDotBarItem(icon: Icons.timer, onTap: () {}),
        
-      ]
+      ],
+      
   ),
     );
   }
@@ -106,7 +116,7 @@ class _HomeEventosState extends State<HomeEventos> {
       padding: EdgeInsets.all(8.0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20.0),
-        color: selected ? Color(0xFF0099FF) : Colors.white
+        color: selected ? Color(0xFFC62828) : Colors.white
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,

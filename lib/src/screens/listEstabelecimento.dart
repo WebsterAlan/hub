@@ -1,10 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:grouped_list/grouped_list.dart';
+import 'package:hub/src/screens/perfilEstabelecimento.dart';
 import 'package:navigation_dot_bar/navigation_dot_bar.dart';
+import 'package:hub/src/screens/listEventos.dart';
+import 'package:hub/src/screens/Home.dart';
 
 
 
-void main() => runApp(MyApp());
+void main() => runApp(MaterialApp(
+  theme: ThemeData(
+    fontFamily: 'Poppins',
+
+  ),
+  home: Listagem(),
+  debugShowCheckedModeBanner: false,
+));
 
 List _elements = [
   {'name': 'Pub República dos Livres','descricao': 'Pistão sul Águas Claras',  'group': 'Team A'},
@@ -19,7 +29,7 @@ List _elements = [
   {'name': 'Paulo', 'descricao': 'descrição completa do estabelecimento', 'group': 'Team C'},
 ];
 
-class MyApp extends StatelessWidget {
+class Listagem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -32,6 +42,7 @@ class MyApp extends StatelessWidget {
     
 
       home: Scaffold(
+        
         backgroundColor: Color(0xFFFAFAFA),
 
        
@@ -49,23 +60,41 @@ class MyApp extends StatelessWidget {
             )),
           ),
           itemBuilder: (c, element) {
+
+            
+            
             return Card(
+              
               elevation: 4.0,
               margin: new EdgeInsets.symmetric(horizontal: 21.0, vertical: 5.0),
+              
               child: Container(
                 
+                
                 child: ListTile(
+                onTap: (){
+                            Navigator.push(
+                                context, MaterialPageRoute(builder: (context) => Perfil()));
+                          },
+                  
+
                   contentPadding:
                       EdgeInsets.symmetric(horizontal: 4.0, vertical: 15.0),
                       
-                  leading: Image.network( 'https://techcrunch.com/wp-content/uploads/2018/07/logo-2.png?w=300', height: double.infinity),
-                  title: Text(element['name']),
-                  subtitle: Text(element['descricao'], style: TextStyle(fontSize: 12),),
+                      
+                      
+                  leading: Image.network( 'http://sosantobar.com.br/wp-content/uploads/2018/05/LOGO-NOVO150.png', height: double.infinity),
                   
+                  title: Text(element['name']),
+                  
+                  
+                  subtitle: Text(element['descricao'], style: TextStyle(fontSize: 12),),
+                   
                  
                 ),
               ),
-            );
+            ); 
+            
           },
         ),
         
@@ -77,13 +106,19 @@ class MyApp extends StatelessWidget {
      
 
   bottomNavigationBar: BottomNavigationDotBar ( 
-      items: <BottomNavigationDotBarItem>[
-        BottomNavigationDotBarItem(icon: Icons.art_track, onTap: () { /* Cualquier funcion - [abrir nueva venta] */ }),
-        BottomNavigationDotBarItem(icon: Icons.date_range , onTap: () { /* Cualquier funcion - [abrir nueva venta] */ }),
-        BottomNavigationDotBarItem(icon: Icons.map, onTap: () { /* Cualquier funcion - [abrir nueva venta] */ }),
-        BottomNavigationDotBarItem(icon: Icons.room, onTap: () { /* Cualquier funcion - [abrir nueva venta] */ }),
+       items: <BottomNavigationDotBarItem>[
+        BottomNavigationDotBarItem(icon: Icons.description, onTap: () {Navigator.push(
+                                context, MaterialPageRoute(builder: (context) => Home())); }),
+
+         BottomNavigationDotBarItem(icon: Icons.description, onTap: () {Navigator.push(
+                                context, MaterialPageRoute(builder: (context) => HomeEventos())); }),
+
+        BottomNavigationDotBarItem(icon: Icons.alarm_add, onTap: () { Navigator.push(
+                                context, MaterialPageRoute(builder: (context)=>Listagem()));}),
+
+        BottomNavigationDotBarItem(icon: Icons.timer, onTap: () {}),
        
-      ]
+      ],
   ),
 
 

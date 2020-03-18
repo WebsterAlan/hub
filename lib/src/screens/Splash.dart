@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:hub/src/screens/GoogleMapsPage.dart';
 import 'package:hub/src/screens/LoginWidget.dart';
-import 'package:hub/src/screens/SearchLocation.dart';
+
 
 class Splash extends  StatefulWidget {
   
