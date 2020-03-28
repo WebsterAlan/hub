@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grouped_list/grouped_list.dart';
+import 'package:hub/src/screens/CategoryPage.dart';
 import 'package:hub/src/screens/perfilEstabelecimento.dart';
 import 'package:navigation_dot_bar/navigation_dot_bar.dart';
 import 'package:hub/src/screens/listEventos.dart';
@@ -114,7 +115,7 @@ class Listagem extends StatelessWidget {
                                 context, MaterialPageRoute(builder: (context) => HomeEventos())); }),
 
         BottomNavigationDotBarItem(icon: Icons.alarm_add, onTap: () { Navigator.push(
-                                context, MaterialPageRoute(builder: (context)=>Listagem()));}),
+                                context, MaterialPageRoute(builder: (context)=>CategoryPage()));}),
 
         BottomNavigationDotBarItem(icon: Icons.timer, onTap: () {}),
        

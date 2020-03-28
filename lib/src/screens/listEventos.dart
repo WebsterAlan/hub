@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hub/src/screens/CategoryPage.dart';
 import 'package:navigation_dot_bar/navigation_dot_bar.dart';
 import 'listEstabelecimento.dart';
 import 'package:hub/src/screens/Home.dart';
@@ -101,7 +102,7 @@ class _HomeEventosState extends State<HomeEventos> {
                                 context, MaterialPageRoute(builder: (context) => HomeEventos())); }),
 
         BottomNavigationDotBarItem(icon: Icons.alarm_add, onTap: () { Navigator.push(
-                                context, MaterialPageRoute(builder: (context)=>Listagem()));}),
+                                context, MaterialPageRoute(builder: (context)=>CategoryPage()));}),
 
         BottomNavigationDotBarItem(icon: Icons.timer, onTap: () {}),
        
